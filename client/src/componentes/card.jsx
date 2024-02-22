@@ -5,13 +5,14 @@ export default function card({task}) {
 
   const Navigate =useNavigate()
   return (
-    <div style={{background:"#77D4E6 "}}
+    <div className='bg-slate-600 p-3 hover:bg-zinc-700 hover:cursor-pointer '
     
     onClick={() => {
       Navigate(`/darbin/${task.id}`)
     }}>
-    <h1>{task.vegetable_name}</h1>
-    <hr />
+    <h1 className="font-bold uppercase">{task.vegetable_name}</h1>
+    <h1 className="text-slate-400">{task.description}</h1>
+
     
     </div>
     

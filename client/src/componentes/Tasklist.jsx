@@ -18,7 +18,7 @@ export default function Tasklist() {
 
 
   return (
-    <div>
+    <div className="grid grid-cols-3 gap-3 w-100  h-12" >
         {tasks.map((task) => (
             <Card key={task.id} task={task}/>
            
